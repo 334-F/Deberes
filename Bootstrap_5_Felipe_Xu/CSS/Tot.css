@@ -1,0 +1,28 @@
+/* Asegura que el html y body ocupen toda la altura disponible */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://i.pinimg.com/originals/ac/1e/96/ac1e96e20d29814ceda500bbd9fa0c3a.gif'); /* Imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* El contenedor principal ocupa el espacio disponible */
+.container {
+    flex: 1;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Empuja el footer al fondo */
+}
+
+footer p {
+    margin: 5px 0;
+}

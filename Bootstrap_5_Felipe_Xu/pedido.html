@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="CSS/Tot.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-secondary disabled">Datos de cliente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nnav-link text-secondary disabled">Información adicional</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white active">Pedido</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-secondary disabled">Datos de pago</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <h2>Realizar Pedido</h2>
+        <form>
+            <div class="mb-3">
+                <h4>Seleccione el producto</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Imagen</th>
+                            <th>Precio</th>
+                            <th>Seleccionar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Váter Básico</td>
+                            <td><img src="Imagen/Im11.webp" alt="Váter Básico" class="img-fluid" width="100"></td>
+                            <td>€1100</td>
+                            <td><input type="checkbox" name="producto" value="vater_basico"></td>
+                        </tr>
+                        <tr>
+                            <td>Váter Deluxe</td>
+                            <td><img src="Imagen/Im22.webp" alt="Váter Deluxe" class="img-fluid" width="100"></td>
+                            <td>€550</td>
+                            <td><input type="checkbox" name="producto" value="vater_deluxe"></td>
+                        </tr>
+                        <tr>
+                            <td>Váter Premium</td>
+                            <td><img src="Imagen/Im55.webp" alt="Váter Premium" class="img-fluid" width="100"></td>
+                            <td>€500</td>
+                            <td><input type="checkbox" name="producto" value="vater_premium"></td>
+                        </tr>
+                        <tr>
+                            <td>Váter Ecológico</td>
+                            <td><img src="Imagen/Im44.webp" alt="Váter Ecológico" class="img-fluid" width="100"></td>
+                            <td>€800</td>
+                            <td><input type="checkbox" name="producto" value="vater_ecologico"></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mb-3">
+                <label for="cantidad" class="form-label">Cantidad</label>
+                <input type="number" class="form-control" id="cantidad" name="cantidad" min="1" required>
+            </div>
+
+            <a href="datospago.html" class="btn btn-primary">Siguiente</a>
+        </form>
+    </div>
+
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <p><strong>Vatrid</strong></p>
+            <p>Dirección: Calle Paraíso 33, 28004, Madrid, España</p>
+            <p>Teléfono: 666666666</p>
+            <p>Email: vateres@.com</p>
+            <p>&copy; 2025 Vatrid. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
